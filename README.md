@@ -32,8 +32,8 @@ Built as a transparent and PHI-free baseline to test clinical safety automation 
 | 5  | syncope               | 5     | MODERATE  | ECG; syncope                         | Brief standing syncope episode...            |
 
 ---
+## Quick Run (Google Colab)
 
-## ```Quick Run (Google Colab)
 python
 !unzip -q clinical-nlp-triage_step2.zip -d .
 %cd clinical-nlp-triage_step2
