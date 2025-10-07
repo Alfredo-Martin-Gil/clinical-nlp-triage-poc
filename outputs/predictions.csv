@@ -1,0 +1,6 @@
+id,chief_complaint,score,risk_band,hits,triage_note
+5,síncope,5,MODERATE,ecg;síncope,Síncope breve al estar de pie. No recuerda dolor torácico. TA normal. ECG normal.
+2,mareo,3,MODERATE,ecg;mareo,Paciente 72a con mareo al incorporarse. Niega dolor torácico y disnea. TA 130/75. ECG sin cambios.
+4,dolor torácico,3,MODERATE,dolor torácico,Hombre 40a con dolor torácico punzante que empeora con la inspiración. Niega sudoración o irradiación.
+1,dolor torácico,20,HIGH,brazo izquierdo;diaforesis;disnea;dolor torácico;ecg;irradiado;opresivo;st elevado,"Varón 58a con dolor torácico opresivo, irradiado a brazo izquierdo, con diaforesis y disnea desde hace 30 minutos. TA 90/60. ECG con ST elevado."
+3,falta de aire,12,HIGH,disnea;dolor torácico;palpitaciones;sudoración;troponina,"Mujer 66a con disnea y dolor torácico leve, palpitaciones, sudoración. Troponina pendiente."

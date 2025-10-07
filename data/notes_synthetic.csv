@@ -1,0 +1,6 @@
+id,chief_complaint,triage_note,label_demo
+1,dolor torácico,"Varón 58a con dolor torácico opresivo, irradiado a brazo izquierdo, con diaforesis y disnea desde hace 30 minutos. TA 90/60. ECG con ST elevado.",red_flag
+2,mareo,Paciente 72a con mareo al incorporarse. Niega dolor torácico y disnea. TA 130/75. ECG sin cambios.,no_flag
+3,falta de aire,"Mujer 66a con disnea y dolor torácico leve, palpitaciones, sudoración. Troponina pendiente.",red_flag
+4,dolor torácico,Hombre 40a con dolor torácico punzante que empeora con la inspiración. Niega sudoración o irradiación.,possible_flag
+5,síncope,Síncope breve al estar de pie. No recuerda dolor torácico. TA normal. ECG normal.,no_flag

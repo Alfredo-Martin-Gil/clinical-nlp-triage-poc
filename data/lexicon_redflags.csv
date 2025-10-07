@@ -1,0 +1,24 @@
+termino,categoria,peso
+dolor torácico,chest_pain,3
+opresivo,quality,2
+irradiado,radiation,2
+brazo izquierdo,radiation_site,2
+sudoración,autonomic,2
+diaforesis,autonomic,2
+disnea,dyspnea,3
+mareo,dizziness,1
+síncope,syncope,3
+taquicardia,vitals,2
+hipotensión,vitals,3
+náuseas,autonomic,1
+vómitos,autonomic,1
+palpitaciones,palpitations,1
+angina,diagnosis,3
+IAM,diagnosis,4
+infarto,diagnosis,4
+tromboembolismo pulmonar,diagnosis_diff,4
+TEP,diagnosis_diff,4
+d-dímero,lab,1
+troponina,lab,3
+ECG,test,2
+ST elevado,ecg,4
