@@ -33,13 +33,15 @@ Built as a transparent and PHI-free baseline to test clinical safety automation 
 
 ---
 
-## Quick Run (Google Colab)
+## ```Quick Run (Google Colab)
 python
 !unzip -q clinical-nlp-triage_step2.zip -d .
 %cd clinical-nlp-triage_step2
 !python scripts/score_rules.py
 import pandas as pd
 pd.read_csv('outputs/predictions.csv').head(10)
+
+
 ## Next Steps
 - Add positional / pleuritic descriptors
 - Temporal & uncertainty context handling
