@@ -1,58 +1,30 @@
-# Clinical NLP Triage (Rules-First POC)
+# Clinical NLP Triage POC — Historical Repository
 
-Author: Alfredo Martín Gil, MD  
-Fields: Emergency Medicine | Dialysis | AI Applied to Healthcare  
-Location: Spain | Open to Remote / Toronto-ON, Canada
+> [!IMPORTANT]
+> **Historical status:** this proof of concept is retained as an early technical artifact. It is not the current implementation and is not presented as a separate portfolio project.
 
----
+## Current project
 
-## Summary
-Prototype that identifies cardiovascular red flags in short triage notes using rule-based NLP.  
-Built as a transparent and PHI-free baseline to test clinical safety automation before moving to ML models.
+The maintained research prototype is:
 
----
+**[clinical-nlp-triage-open-source](https://github.com/Alfredo-Martin-Gil/clinical-nlp-triage-open-source)**
 
-## Method
-- Input: synthetic triage notes (data/notes_synthetic.csv)
-- Lexicon: weighted red-flag terms (data/lexicon_redflags.csv)
-- Negation: ignores terms if preceded by "no", "niega" or "sin" within 4 tokens
-- Scoring and risk bands:
-  - HIGH ≥ 7
-  - MODERATE ≥ 3
-  - LOW < 3
-- Output: outputs/predictions.csv (ranked by risk and score)
+Review that repository for the current engine, tests, synthetic-data evaluation, documentation, traceability, and safety and validation boundaries.
 
----
+## What remains here
 
-## Sample Output
-| id | chief_complaint       | score | risk_band | hits                                 | triage_note                                  |
-|----|-----------------------|-------|-----------|--------------------------------------|----------------------------------------------|
-| 4  | chest pain            | 20    | HIGH      | arm pain; dyspnea; diaphoresis       | 58-year-old male with chest pain...          |
-| 3  | shortness of breath   | 12    | HIGH      | dyspnea; chest pain; palpitations    | 66-year-old female...                        |
-| 5  | syncope               | 5     | MODERATE  | ECG; syncope                         | Brief standing syncope episode...            |
+This repository preserves an earlier rules-first proof of concept, its synthetic inputs, script, and example output. Its scoring logic and documentation differ from the maintained implementation. Results, thresholds, and capabilities in this historical version must not be attributed to the current project.
 
----
-## Quick Run (Google Colab)
+The content is retained for transparent development history, not as evidence of clinical performance or implementation maturity.
 
-```python
-!unzip -q clinical-nlp-triage_step2.zip -d .
-%cd clinical-nlp-triage_step2
-!python scripts/score_rules.py
-import pandas as pd
-pd.read_csv('outputs/predictions.csv').head(10)
+## Representation boundaries
 
+This historical proof of concept:
 
-```
-## Next Steps
-- Add positional / pleuritic descriptors
-- Temporal & uncertainty context handling
-- Bilingual EN/ES pipeline using FHIR text fields
+- uses synthetic data only;
+- is not clinically validated;
+- is not a diagnostic or triage system;
+- has not been deployed or used for patient care;
+- does not demonstrate safety, effectiveness, improved outcomes, regulatory compliance, or production readiness.
 
-## Disclaimer
-Educational proof-of-concept — uses only synthetic data.
-Not intended for clinical decision making.
-
-## Contact
-Alfredo Martín Gil, MD  
-LinkedIn: https://www.linkedin.com/in/alfredo-martin-gil  
-GitHub: https://github.com/Alfredo-Martin-Gil
+Do not use this repository for real-patient assessment, triage, diagnosis, treatment, or reassurance.
